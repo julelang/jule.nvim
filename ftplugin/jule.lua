@@ -1,5 +1,5 @@
 -- jule.nvim
--- https://github.com/adamperkowski/jule.nvim
+-- https://github.com/julelang/jule.nvim
 -- License: BSD 3-Clause
 
 vim.bo.expandtab = true

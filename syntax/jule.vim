@@ -1,7 +1,7 @@
 " Vim syntax file
 " Language:     Jule
 " Maintainer:   Adam Perkowski <adas1per@protonmail.com>
-" URL: https://github.com/adamperkowski/jule.nvim
+" URL: https://github.com/julelang/jule.nvim
 " License: BSD 3-Clause
 
 if exists("b:current_syntax")

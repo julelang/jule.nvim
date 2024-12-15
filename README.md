@@ -24,7 +24,7 @@ ___
 ### [vim-plug](https://github.com/junegunn/vim-plug)
 Add the following line to your Vim configuration file:
 ```vim
-Plug 'adamperkowski/jule.nvim'
+Plug 'julelang/jule.nvim'
 ```
 Then run the following command:
 ```vim
@@ -44,13 +44,13 @@ require('jule').setup {
 - [Lua](https://www.lua.org)
 - [Neovim](https://neovim.io)
 - [JuleC](https://github.com/julelang/jule)
-- [JuleFmt](https://github.com/adamperkowski/julefmt) (optional)
+- [JuleFmt](https://github.com/julelang/julefmt) (optional)
 
 ### Setup
 1. Make sure all the requirements are installed and are available in your `PATH` variable
 2. Clone the repository and navigate to its directory:
 ```bash
-$ git clone git@github.com:adamperkowski/jule.nvim.git
+$ git clone git@github.com:julelang/jule.nvim.git
 $ cd jule.nvim
 ```
 
@@ -90,4 +90,4 @@ See the [Julenour Code of Conduct](https://jule.dev/code-of-conduct)
 
 ## License
 The extension is distributed under the terms of the BSD 3-Clause license. <br>
-[See License Details](https://jule.dev/pages/license.html)
+[See License Details](/LICENSE)

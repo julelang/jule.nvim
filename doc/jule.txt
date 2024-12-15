@@ -2,7 +2,7 @@
                                                                      *jule.nvim*
 
 Official Jule extension for NeoVim.
-https://github.com/adamperkowski/jule.nvim
+https://github.com/julelang/jule.nvim
 Licensed under the BSD 3-Clause License.
 
 " vim:tw=78:ts=8:ft=help:norl:
