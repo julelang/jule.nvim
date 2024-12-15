@@ -2,7 +2,7 @@
 " Language:     Jule
 " Maintainer:   Adam Perkowski <adas1per@protonmail.com>
 " URL: https://github.com/adamperkowski/jule.nvim
-" Last Change:  Dec 15, 2024
+" License: BSD 3-Clause
 
 if exists("b:current_syntax")
   finish

@@ -1,12 +1,12 @@
 # Jule for NeoVim
-Official Jule extension for NeoVim.
+Official [Jule](https://github.com/julelang/jule) extension for Neovim.
 
 ## Features
 - Syntax highlighting
-- Code formatting (julefmt)
+- Code formatting ([julefmt](https://github.com/julelang/julefmt))
 
 ## Installation
-### Using Vim-Plug
+### [vim-plug](https://github.com/junegunn/vim-plug)
 Add the following line to your Vim configuration file:
 ```vim
 Plug 'adamperkowski/jule.nvim'
@@ -17,7 +17,7 @@ Then run the following command:
 ```
 
 ## Configuration
-Add the following line to your Vim configuration file to enable code formatting:
+### Code formatting
 ```lua
 require('jule').setup {
   format_on_save = true

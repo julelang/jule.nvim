@@ -1,3 +1,7 @@
+-- jule.nvim
+-- https://github.com/adamperkowski/jule.nvim
+-- License: BSD 3-Clause
+
 local M = {}
 
 M.config = {
