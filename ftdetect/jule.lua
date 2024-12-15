@@ -3,10 +3,10 @@
 -- License: BSD 3-Clause
 
 vim.filetype.add({
-    extension = {
-        jule = 'jule',
-    },
-    filename = {
-        ['jule.mod'] = 'jule',
-    },
+	extension = {
+		jule = "jule",
+	},
+	filename = {
+		["jule.mod"] = "jule",
+	},
 })
