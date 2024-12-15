@@ -1,8 +1,38 @@
 ================================================================================
-                                                                     *jule.nvim*
+CONTENTS                                                             *jule.nvim*
 
-Official Jule extension for NeoVim.
+1. Introduction                                                     |jule-intro|
+2. Settings                                                      |jule-settings|
+
+================================================================================
+INTRODUCTION                                                        *jule-intro*
+
+Official Jule extension for Neovim.
 https://github.com/julelang/jule.nvim
 Licensed under the BSD 3-Clause License.
 
-" vim:tw=78:ts=8:ft=help:norl:
+================================================================================
+SETTINGS                                                         *jule-settings*
+
+This plugin has a few variables you can define using the
+`require('jule').setup()` function. See the `README.md` file for detailed
+instructions.
+
+                                                                *format_on_save*
+format_on_save~
+        Run the |format_command| automatically upon saving a file. >
+            require('jule').setup {
+              format_on_save = true
+            }
+<
+
+                                                                *format_command*
+format_command~
+        The command to run when formatting a file. Default: >
+            require('jule').setup {
+              format_command = "julefmt -w %"
+            }
+<
+
+==============================================================================
+ vim:tw=78:sw=4:noet:ts=8:ft=help:norl:

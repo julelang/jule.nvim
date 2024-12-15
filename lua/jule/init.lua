@@ -6,6 +6,7 @@ local M = {}
 
 M.config = {
 	format_on_save = true,
+	format_command = nil,
 }
 
 function M.setup(opts)
@@ -23,7 +24,8 @@ end
 function M.format()
 	local bufnr = vim.api.nvim_get_current_buf()
 	local bufname = vim.api.nvim_buf_get_name(bufnr)
-	vim.cmd("silent ! julefmt -w %", bufname)
+	local format_command = M.config.format_command or "julefmt -w %"
+	vim.cmd("silent !" .. format_command, bufname)
 	vim.cmd("edit")
 end
 

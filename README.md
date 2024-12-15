@@ -35,7 +35,8 @@ Then run the following command:
 ### Code formatting
 ```lua
 require('jule').setup {
-  format_on_save = true
+  format_on_save = true,
+  format_command = "julefmt -w %" -- default, optional
 }
 ```
 
@@ -58,9 +59,7 @@ $ cd jule.nvim
 1. Create a test Jule module:
 ```bash
 $ julec mod init
-$ echo 'fn main() {
-    println("Hello, World!")
-}' > main.jule
+$ printf "fn main() {\n    println(\"Hello world\")\n}" > main.jule
 ```
 2. Get the path to the plugin:
 ```bash
