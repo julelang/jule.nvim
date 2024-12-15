@@ -1,0 +1,32 @@
+name: Lua
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+  workflow_dispatch:
+
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Download StyLua
+        run: |
+          curl -L https://github.com/JohnnyMorganz/StyLua/releases/download/v2.0.2/stylua-linux-x86_64.zip -o stylua.zip
+          unzip stylua.zip
+          chmod +x stylua
+
+      - name: Run StyLua
+        run: ./stylua --check .
+
+      # Luacheck returns warnings like:
+      # accessing undefined variable 'vim'
+      # - name: Luacheck
+      #   uses: lunarmodules/luacheck@v1
