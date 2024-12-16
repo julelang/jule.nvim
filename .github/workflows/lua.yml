@@ -24,7 +24,7 @@ jobs:
           chmod +x stylua
 
       - name: Run StyLua
-        run: ./stylua --check .
+        run: ./stylua --check . --indent-type spaces
 
       # Luacheck returns warnings like:
       # accessing undefined variable 'vim'

@@ -3,23 +3,23 @@
 -- License: BSD 3-Clause
 
 local M = {}
-require('jule.commands')
+require("jule.commands")
 
 M.config = {
-	format_on_save = false,
-	format_command = nil,
+    format_on_save = false,
+    format_command = nil,
 }
 
 function M.setup(opts)
-	M.config = vim.tbl_deep_extend("force", M.config, opts or {})
-	if M.config.format_on_save then
-		vim.cmd([[
+    M.config = vim.tbl_deep_extend("force", M.config, opts or {})
+    if M.config.format_on_save then
+        vim.cmd([[
             augroup JuleFormat
                 autocmd!
                 autocmd BufWritePost *.jule lua require('jule').format()
             augroup END
         ]])
-	end
+    end
 
     -- JuleC
     vim.cmd("command! -nargs=? JuleC lua require('jule.commands').julec(<f-args>)")
@@ -38,11 +38,11 @@ function M.setup(opts)
 end
 
 function M.format()
-	local bufnr = vim.api.nvim_get_current_buf()
-	local bufname = vim.api.nvim_buf_get_name(bufnr)
-	local format_command = M.config.format_command or "julefmt -w %"
-	vim.cmd("silent !" .. format_command, bufname)
-	vim.cmd("edit")
+    local bufnr = vim.api.nvim_get_current_buf()
+    local bufname = vim.api.nvim_buf_get_name(bufnr)
+    local format_command = M.config.format_command or "julefmt -w %"
+    vim.cmd("silent !" .. format_command, bufname)
+    vim.cmd("edit")
 end
 
 return M
