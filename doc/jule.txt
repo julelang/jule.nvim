@@ -3,6 +3,7 @@ CONTENTS                                                             *jule.nvim*
 
 1. Introduction                                                     |jule-intro|
 2. Settings                                                      |jule-settings|
+3. Commands                                                      |jule-commands|
 
 ================================================================================
 INTRODUCTION                                                        *jule-intro*
@@ -20,9 +21,9 @@ instructions.
 
                                                                 *format_on_save*
 format_on_save~
-        Run the |format_command| automatically upon saving a file. >
+        Run the |format_command| automatically upon saving a file. Default: >
             require('jule').setup {
-              format_on_save = true
+              format_on_save = false
             }
 <
 
@@ -34,5 +35,46 @@ format_command~
             }
 <
 
-==============================================================================
+================================================================================
+COMMANDS                                                         *jule-commands*
+
+This plugin provides a few commands you can use to interact with Jule's tools.
+
+JuleC
+-----
+
+`JuleC` is Jule's compiler. The commands for invoking it from Neovim are:
+
+                                                                       *:JuleC*
+:JuleC <args>
+		Run `julec` with the given arguments.
+
+                                                                    *:JCompile*
+:JCompile <args>
+		Shortcut for `julec . -o <args>`.
+
+                                                                *:JCompileProd*
+:JCompileProd <args>
+		Shortcut for `julec . -o <args> --opt L2 --production`.
+
+                                                                       *:JTest*
+:JTest <args>
+		Shortcut for `julec test . <args>`.
+
+                                                                       *:JInit*
+:JInit
+		Shortcut for `julec mod init`.
+
+                                                                        *:JEnv*
+:JEnv
+		Shortcut for `julec julenv`.
+
+Formatting
+----------
+
+                                                                     *:JuleFmt*
+:JuleFmt
+		Runs |format_command| on the current file.
+
+================================================================================
  vim:tw=78:sw=4:noet:ts=8:ft=help:norl:
