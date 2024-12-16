@@ -2,7 +2,12 @@
 
 All notable changes to jule.nvim will be documented in this file.
 
-## [upstream]
+## [0.0.2] - 2024-12-16
+
+### 🚀 Features
+
+- *(formatting)* allow setting custom `format_command` ([f99e1c7](https://github.com/julelang/jule.nvim/commit/f99e1c7cec5bef8a017b83b6cf05be1b900211c2))
+- *(commands)* add a list of built-in commands ([f05e9bb](https://github.com/julelang/jule.nvim/commit/f05e9bb463ce522505c694c1bc4bbbee19af8e85))
 
 ### 📚 Documentation
 
@@ -12,6 +17,7 @@ All notable changes to jule.nvim will be documented in this file.
 ### ⚙️ Miscellaneous Tasks
 
 - update the repo owner ([9139726](https://github.com/julelang/jule.nvim/commit/91397265c7749c8592282cccbc403ba8d9ca6bd7))
+- *(stylua)* change indent type to spaces ([0c61d51](https://github.com/julelang/jule.nvim/commit/0c61d51dce4e134f55d1f95b7627055c12d9fbe7))
 
 ### Other (unconventional)
 
