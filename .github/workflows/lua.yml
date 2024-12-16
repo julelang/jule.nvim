@@ -26,7 +26,7 @@ jobs:
       - name: Run StyLua
         run: ./stylua --check . --indent-type spaces
 
-      # Luacheck returns warnings like:
-      # accessing undefined variable 'vim'
-      # - name: Luacheck
-      #   uses: lunarmodules/luacheck@v1
+      - name: Luacheck
+        uses: lunarmodules/luacheck@v1
+        with:
+          args: . --globals vim
