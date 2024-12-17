@@ -13,7 +13,9 @@ function M.setup(opts)
     M.config = vim.tbl_deep_extend("force", M.config, opts or {})
     if M.config.format_on_save then
         vim.cmd([[
-            autocmd BufWritePost *.jule lua require('jule').format()
+            augroup JuleFormat
+                autocmd BufWritePost *.jule lua require('jule').format()
+            augroup END
         ]])
     end
 
@@ -37,8 +39,13 @@ function M.format()
     local bufnr = vim.api.nvim_get_current_buf()
     local bufname = vim.api.nvim_buf_get_name(bufnr)
     local format_command = M.config.format_command or "julefmt -w %"
+
+    local view = vim.fn.winsaveview()
+
     vim.cmd("silent !" .. format_command, bufname)
+
     vim.cmd("edit")
+    vim.fn.winrestview(view)
 end
 
 return M
