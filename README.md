@@ -1,4 +1,4 @@
-# Jule for NeoVim
+# Jule for Neovim
 Official [Jule](https://github.com/julelang/jule) extension for Neovim.
 
 ___
@@ -45,7 +45,7 @@ require('jule').setup {
 - [Lua](https://www.lua.org)
 - [Neovim](https://neovim.io)
 - [JuleC](https://github.com/julelang/jule)
-- [JuleFmt](https://github.com/julelang/julefmt) (optional)
+- [JuleFmt](https://github.com/julelang/julefmt)
 
 ### Setup
 1. Make sure all the requirements are installed and are available in your `PATH` variable
