@@ -3,7 +3,6 @@
 -- License: BSD 3-Clause
 
 local M = {}
-require("jule.commands")
 
 M.config = {
     format_on_save = false,
@@ -14,10 +13,7 @@ function M.setup(opts)
     M.config = vim.tbl_deep_extend("force", M.config, opts or {})
     if M.config.format_on_save then
         vim.cmd([[
-            augroup JuleFormat
-                autocmd!
-                autocmd BufWritePost *.jule lua require('jule').format()
-            augroup END
+            autocmd BufWritePost *.jule lua require('jule').format()
         ]])
     end
 
