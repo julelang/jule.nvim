@@ -2,15 +2,20 @@
 
 All notable changes to jule.nvim will be documented in this file.
 
-## [upstream]
+## [0.0.3] - 2024-12-17
 
 ### 🐛 Bug Fixes
 
 - *(ftplugin)* non julefmt compliant tabs ([498b1e3](https://github.com/julelang/jule.nvim/commit/498b1e312dc7334d554d0f4b0233013428fb0642))
+- *(formatting)* moving view ([77dd3c8](https://github.com/julelang/jule.nvim/commit/77dd3c8a8727e19158686b9fd6dbca9bf64ca545))
 
 ### 🛠️ Refactoring
 
 - split & optimize the code ([ad71300](https://github.com/julelang/jule.nvim/commit/ad7130081425f6b454f5b375b0aa716876a4fa1a))
+
+### 📚 Documentation
+
+- *(README)* minor fixes ([364928f](https://github.com/julelang/jule.nvim/commit/364928f808a2cf2d0de3073c35029cf9a2c404da))
 
 ### ⚙️ Miscellaneous Tasks
 
