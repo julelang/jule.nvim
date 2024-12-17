@@ -2,6 +2,21 @@
 
 All notable changes to jule.nvim will be documented in this file.
 
+## [upstream]
+
+### 🐛 Bug Fixes
+
+- *(ftplugin)* non julefmt compliant tabs ([498b1e3](https://github.com/julelang/jule.nvim/commit/498b1e312dc7334d554d0f4b0233013428fb0642))
+
+### ⚙️ Refactoring
+
+- split & optimize the code ([ad71300](https://github.com/julelang/jule.nvim/commit/ad7130081425f6b454f5b375b0aa716876a4fa1a))
+
+### ⚙️ Miscellaneous Tasks
+
+- *(luacheck)* add `vim` to `globals` ([79fbc50](https://github.com/julelang/jule.nvim/commit/79fbc50e93575f3117b81da76d3c5ddf25e0bd71))
+- *(ci)* add `typos.yml` ([6016ff2](https://github.com/julelang/jule.nvim/commit/6016ff2561cc44e1181ca9d46cf945555f245851))
+
 ## [0.0.2] - 2024-12-16
 
 ### 🚀 Features
