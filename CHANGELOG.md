@@ -8,7 +8,7 @@ All notable changes to jule.nvim will be documented in this file.
 
 - *(ftplugin)* non julefmt compliant tabs ([498b1e3](https://github.com/julelang/jule.nvim/commit/498b1e312dc7334d554d0f4b0233013428fb0642))
 
-### ⚙️ Refactoring
+### 🛠️ Refactoring
 
 - split & optimize the code ([ad71300](https://github.com/julelang/jule.nvim/commit/ad7130081425f6b454f5b375b0aa716876a4fa1a))
 
