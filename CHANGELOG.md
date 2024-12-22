@@ -2,6 +2,12 @@
 
 All notable changes to jule.nvim will be documented in this file.
 
+## [0.0.4] - 2024-12-22
+
+### 🐛 Bug Fixes
+
+- *(syntax)* add missing keywords, change the order, update names, fix comments & operators ([4f4daa1](https://github.com/julelang/jule.nvim/commit/4f4daa1fed77d25f9922ed33e7ca2c1374ee1eaa))
+
 ## [0.0.3] - 2024-12-17
 
 ### 🐛 Bug Fixes
