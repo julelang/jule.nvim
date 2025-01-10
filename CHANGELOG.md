@@ -2,6 +2,16 @@
 
 All notable changes to jule.nvim will be documented in this file.
 
+## [0.0.5] - 2025-01-10
+
+### 🐛 Bug Fixes
+
+- juleDirective breaking everything with `"`s ([ee75aa9](https://github.com/julelang/jule.nvim/commit/ee75aa9be500fc7bde2ebac39d3c8ea3913b2d4c))
+
+### ⚙️ Miscellaneous Tasks
+
+- update copyright year ([b080e95](https://github.com/julelang/jule.nvim/commit/b080e951a837fd22008a30c1a8b12c85352375f3))
+
 ## [0.0.4] - 2024-12-22
 
 ### 🐛 Bug Fixes
