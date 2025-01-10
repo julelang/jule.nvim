@@ -8,7 +8,7 @@ if exists("b:current_syntax")
   finish
 endif
 
-syntax match juleDirective "#\p\+\>"
+syntax region juleDirective start="#\p\+\>" end="$" contains=juleComment,juleLineComment
 
 syntax keyword juleKeyword chan map error use fn pub struct byte rune enum unsafe
 syntax keyword juleKeyword const let static match defer if else for in impl trait
