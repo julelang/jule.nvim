@@ -2,6 +2,21 @@
 
 All notable changes to jule.nvim will be documented in this file.
 
+## [0.0.6] - 2025-01-11
+
+### 🚀 Features
+
+- *(ftplugin)* use smartindent ([0830835](https://github.com/julelang/jule.nvim/commit/083083513a86e91c9917c5581e4f8fbdd60190fe))
+
+### 🐛 Bug Fixes
+
+- *(syntax)* add the missing `select` keyword ([008983e](https://github.com/julelang/jule.nvim/commit/008983e6b1c8c6dff780432d3ec947438ddb1750))
+- *(syntax)* split types and keywords & fix a typo in `uintptr` ([778a877](https://github.com/julelang/jule.nvim/commit/778a87700c6a73d3f49dab2853826f47a28dc6a5))
+
+### ⚙️ Miscellaneous Tasks
+
+- comment the code ([b0316ca](https://github.com/julelang/jule.nvim/commit/b0316ca4c7dc2266cfe4baae2d580fb61d85acc5))
+
 ## [0.0.5] - 2025-01-10
 
 ### 🐛 Bug Fixes
