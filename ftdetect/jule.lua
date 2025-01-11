@@ -1,6 +1,7 @@
 -- jule.nvim
--- https://github.com/julelang/jule.nvim
--- License: BSD 3-Clause
+-- License:    BSD 3-Clause
+-- Repository: https://github.com/julelang/jule.nvim
+-- Maintainer: Adam Perkowski <adas1per@protonmail.com>
 
 vim.filetype.add({
     extension = {

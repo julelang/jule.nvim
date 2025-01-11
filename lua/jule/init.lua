@@ -1,6 +1,7 @@
 -- jule.nvim
--- https://github.com/julelang/jule.nvim
--- License: BSD 3-Clause
+-- License:    BSD 3-Clause
+-- Repository: https://github.com/julelang/jule.nvim
+-- Maintainer: Adam Perkowski <adas1per@protonmail.com>
 
 local M = {}
 
@@ -19,7 +20,6 @@ function M.setup(opts)
         ]])
     end
 
-    -- JuleC
     vim.cmd("command! -nargs=? JuleC lua require('jule.commands').julec(<f-args>)")
     vim.cmd([[
         command! -nargs=? JCompile lua require('jule.commands').julecompile(vim.fn.expand("<args>"), false)
@@ -30,8 +30,6 @@ function M.setup(opts)
     vim.cmd("command! -nargs=? JTest lua require('jule.commands').juletest(<f-args>)")
     vim.cmd("command! JInit lua require('jule.commands').julemodinit()")
     vim.cmd("command! JEnv lua require('jule.commands').julenv()")
-
-    -- Formatting
     vim.cmd("command! JuleFmt lua require('jule').format()")
 end
 

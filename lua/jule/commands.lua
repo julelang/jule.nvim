@@ -1,17 +1,18 @@
 -- jule.nvim
--- https://github.com/julelang/jule.nvim
--- License: BSD 3-Clause
+-- License:    BSD 3-Clause
+-- Repository: https://github.com/julelang/jule.nvim
+-- Maintainer: Adam Perkowski <adas1per@protonmail.com>
 
 local integration = require("jule.integration")
 local M = {}
 
--- JuleC
-
+-- Command: JuleC
 function M.julec(args)
     integration.parse_args(args, "")
     print(vim.cmd("!julec " .. args))
 end
 
+-- Command: JCompile, JCompileProd
 function M.julecompile(args, prod)
     integration.parse_args(args, "a.out")
 
@@ -22,15 +23,18 @@ function M.julecompile(args, prod)
     print(vim.cmd("!julec . -o " .. args))
 end
 
+-- Command: JTest
 function M.juletest(args)
     integration.parse_args(args, "")
     print(vim.cmd("!julec test . " .. args))
 end
 
+-- Command: JInit
 function M.julemodinit()
     print(vim.cmd("!julec mod init"))
 end
 
+-- Command: JEnv
 function M.julenv()
     print(vim.cmd("!julec julenv"))
 end
