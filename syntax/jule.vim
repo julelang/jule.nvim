@@ -14,7 +14,7 @@ syntax keyword juleKeyword chan map error use fn pub struct byte rune enum unsaf
 syntax keyword juleKeyword const let static match defer if else for in impl trait
 syntax keyword juleKeyword break continue goto cpp i8 i16 i32 i64 u8 u16 u32 u64
 syntax keyword juleKeyword f32 f64 str int uint type any bool ret fall unitptr co
-syntax keyword juleKeyword let
+syntax keyword juleKeyword let select
 
 syntax keyword juleStorage static const mut pub self
 syntax keyword juleConstant true false nil
