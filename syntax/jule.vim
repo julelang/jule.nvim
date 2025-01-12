@@ -13,7 +13,7 @@ endif
 syntax region juleDirective start="#\p\+\>" end="$" contains=juleComment,juleLineComment
 
 " core keywords
-syntax keyword juleKeyword chan map error use fn pub struct byte rune enum unsafe
+syntax keyword juleKeyword chan map error use fn struct byte rune enum unsafe
 syntax keyword juleKeyword const let static match defer if else for in impl trait
 syntax keyword juleKeyword break continue goto cpp type ret fall co let select
 
