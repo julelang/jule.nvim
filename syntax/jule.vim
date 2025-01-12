@@ -56,9 +56,9 @@ syntax match juleEscape display contained "\\[abfnrtv'\"\\]"
 
 " comments
 " regex: a sequence of characters starting with `//` and ending with a newline
-syntax region juleLineComment start="//" end="$" contains=@Spell
+syntax region juleLineComment start="//" end="$" contains=juleTodo,@Spell
 " regex: a sequence of characters starting with `/*` and ending with `*/`
-syntax region juleComment start="/\*" end="\*/" contains=@Spell
+syntax region juleComment start="/\*" end="\*/" contains=juleTodo,@Spell
 
 " operators
 syntax match juleOperator "\(+\|-\|*\|/\|%\|++\|--\|>>\|<<\)" contains=juleLineComment,juleComment
@@ -69,6 +69,9 @@ syntax match juleOperator "\(&&\|||\|!\)"
 
 " delimiters
 syntax match juleDelimiter "[.,;:]"
+
+" TODO
+syntax keyword juleTodo TODO FIXME XXX NOTE BUG FIX
 
 highlight default link juleDirective PreProc
 highlight default link juleKeyword Keyword
@@ -89,6 +92,7 @@ highlight default link juleLineComment Comment
 highlight default link juleComment Comment
 highlight default link juleOperator Operator
 highlight default link juleDelimiter Delimiter
+highlight default link juleTodo Todo
 
 let b:current_syntax = "jule"
 
