@@ -2,6 +2,17 @@
 
 All notable changes to jule.nvim will be documented in this file.
 
+## [0.0.7] - 2025-01-14
+
+### 🚀 Features
+
+- *(syntax)* add TODO keywords ([f506fc9](https://github.com/julelang/jule.nvim/commit/f506fc93fd6a5085d136105aa0d327b6c416b7e8))
+- `fn[]()` support ([24a786b](https://github.com/julelang/jule.nvim/commit/24a786b18487433f34a5682e0d457a5c186d54aa))
+
+### 🐛 Bug Fixes
+
+- *(syntax)* remove duplicate `pub` ([1e3a2a1](https://github.com/julelang/jule.nvim/commit/1e3a2a12021a8450fe3eeabad00ab725ff2b78bc))
+
 ## [0.0.6] - 2025-01-11
 
 ### 🚀 Features
