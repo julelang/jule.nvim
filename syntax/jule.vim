@@ -25,8 +25,9 @@ syntax keyword juleStorage static const mut pub self
 syntax keyword juleConstant true false nil
 
 " function names
-" regex: a word followed by `(`, but not including `(` in the match
+" regex: a word followed by either `(` or `[`, but not including `(` or `[`
 syntax match juleFunction "\<\k\+\ze("
+syntax match juleFunction "\<\k\+\ze\[.*\]("
 
 " numbers
 " regex: a sequence of digits, possibly separated by `_` (e.g. `123`, `123_456`)
