@@ -21,7 +21,7 @@ syntax keyword juleKeyword break continue goto cpp type ret fall co let select
 syntax keyword juleType int uint uintptr i8 i16 i32 i64 u8 u16 u32 u64 f32 f64 bool str any byte rune
 
 " storage keywords
-syntax keyword juleStorage static const mut pub self
+syntax keyword juleStorage static const mut self
 syntax keyword juleConstant true false nil
 
 " function names
