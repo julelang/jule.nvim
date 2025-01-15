@@ -14,8 +14,8 @@ syntax region juleDirective start="#\p\+\>" end="$" contains=juleComment,juleLin
 
 " core keywords
 syntax keyword juleKeyword chan map error use fn struct byte rune enum unsafe
-syntax keyword juleKeyword const let static match defer if else for in impl trait
-syntax keyword juleKeyword break continue goto cpp type ret fall co let select
+syntax keyword juleKeyword let match defer if else for in impl trait break
+syntax keyword juleKeyword continue goto cpp type ret fall co let select
 
 " type keywords
 syntax keyword juleType int uint uintptr i8 i16 i32 i64 u8 u16 u32 u64 f32 f64 bool str any byte rune
