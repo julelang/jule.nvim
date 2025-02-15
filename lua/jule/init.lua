@@ -8,16 +8,27 @@ local M = {}
 M.config = {
     format_on_save = false,
     format_command = nil,
+    enable_cmp = true,
 }
 
 function M.setup(opts)
     M.config = vim.tbl_deep_extend("force", M.config, opts or {})
+
     if M.config.format_on_save then
         vim.cmd([[
             augroup JuleFormat
                 autocmd BufWritePost *.jule lua require('jule').format()
             augroup END
         ]])
+    end
+
+    if M.config.enable_cmp then
+        vim.api.nvim_create_autocmd({ "BufEnter", "BufWinEnter" }, {
+            pattern = "*.jule",
+            callback = function()
+                require("jule.cmp").setup()
+            end,
+        })
     end
 
     vim.cmd("command! -nargs=? JuleC lua require('jule.commands').julec(<f-args>)")

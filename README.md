@@ -5,8 +5,10 @@ ___
 
 - [Features](#features)
 - [Installation](#installation)
+  - [vim-plug](#vim-plug)
 - [Configuration](#configuration)
   - [Code formatting](#code-formatting)
+  - [Completion source](#completion-source)
 - [Development](#development)
   - [Requirements](#requirements)
   - [Setup](#setup)
@@ -19,6 +21,7 @@ ___
 ## Features
 - Syntax highlighting
 - Code formatting ([julefmt](https://github.com/julelang/julefmt))
+- Basic keyword completion source for [nvim-cmp]
 
 ## Installation
 ### [vim-plug](https://github.com/junegunn/vim-plug)
@@ -37,6 +40,20 @@ Then run the following command:
 require('jule').setup {
   format_on_save = true,
   format_command = "julefmt -w %" -- default, optional
+}
+```
+
+### Completion source
+Note that [nvim-cmp] has to be installed.
+```lua
+require('jule').setup {
+  enable_cmp = true
+}
+
+require('cmp').setup {
+  sources = {
+    { name = 'jule' }
+  }
 }
 ```
 
@@ -82,7 +99,7 @@ $ nvim main.jule
 ```vim
 :lua require('jule').setup { format_on_save = true }
 ```
-7. Done!
+7. Done! (you might need to re-open the buffer for the completion source to initialize properly)
 
 ## Code of Conduct
 See the [Julenour Code of Conduct](https://jule.dev/code-of-conduct)
@@ -90,3 +107,5 @@ See the [Julenour Code of Conduct](https://jule.dev/code-of-conduct)
 ## License
 The extension is distributed under the terms of the BSD 3-Clause license. <br>
 [See License Details](/LICENSE)
+
+[nvim-cmp]: https://github.com/hrsh7th/nvim-cmp
