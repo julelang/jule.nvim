@@ -1,6 +1,6 @@
 " Vim syntax file
 " Language:     Jule
-" Maintainer:   Adam Perkowski <adas1per@protonmail.com>
+" Maintainer:   adam <me@adamperkowski.dev>
 " URL: https://github.com/julelang/jule.nvim
 " License: BSD 3-Clause
 

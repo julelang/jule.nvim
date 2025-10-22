@@ -1,7 +1,7 @@
 -- jule.nvim
 -- License:    BSD 3-Clause
 -- Repository: https://github.com/julelang/jule.nvim
--- Maintainer: Adam Perkowski <adas1per@protonmail.com>
+-- Maintainer: adam <me@adamperkowski.dev>
 
 vim.bo.expandtab = false
 vim.bo.shiftwidth = 4
