@@ -8,6 +8,6 @@ vim.filetype.add({
         jule = "jule",
     },
     filename = {
-        ["jule.mod"] = "jule",
+        ["jule.mod"] = "julemod",
     },
 })
