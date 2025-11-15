@@ -3,7 +3,12 @@
 -- Repository: https://github.com/julelang/jule.nvim
 -- Maintainer: adam <me@adamperkowski.dev>
 
+vim.bo.autoindent = true
+vim.bo.foldenable = true
+vim.bo.cindent = false
+vim.bo.smartindent = false
 vim.bo.expandtab = false
-vim.bo.shiftwidth = 4
-vim.bo.softtabstop = 4
-vim.bo.smartindent = true -- this might be problematic as fuck in the future but it's fine for now
+
+vim.bo.indentexpr = 'v:lua.require("jule.indent").indent()'
+vim.bo.foldmethod = 'expr'
+vim.bo.foldexpr = 'v:lua.require("jule.indent").fold()'
