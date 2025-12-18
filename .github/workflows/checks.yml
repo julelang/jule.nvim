@@ -1,0 +1,40 @@
+name: checks
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  lua:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - name: download stylua
+        run: |
+          curl -L https://github.com/JohnnyMorganz/StyLua/releases/latest/download/stylua-linux-x86_64.zip -o stylua.zip
+          unzip stylua.zip
+          chmod +x stylua
+      - name: stylua
+        run: ./stylua --check . --indent-type spaces
+      - name: luacheck
+        uses: lunarmodules/luacheck@v1
+        with:
+          args: . --globals vim
+  typos:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - name: typos
+        uses: crate-ci/typos@v1
+  commit-message:
+    name: commit message
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - name: check commit message
+        uses: adamperkowski/commits@main
+        with:
+          scopes: 'syntax,cmp,commands,ftplugin,ftdetect,doc,ci,chore'
