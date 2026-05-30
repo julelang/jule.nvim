@@ -35,6 +35,6 @@ jobs:
     steps:
       - uses: actions/checkout@v6
       - name: check commit message
-        uses: adamperkowski/commits@main
+        uses: koibtw/commits@main
         with:
           scopes: 'syntax,cmp,commands,ftplugin,ftdetect,doc,ci,chore'

@@ -1,7 +1,6 @@
 -- jule.nvim
 -- License:    BSD 3-Clause
 -- Repository: https://github.com/julelang/jule.nvim
--- Maintainer: adam <me@adamperkowski.dev>
 
 local M = {}
 
